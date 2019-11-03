@@ -1,0 +1,21 @@
+<div class="modal-body">
+	<div class="modal-header">
+		<h2 class="modal-header-title">
+			<i class="fa fa-cloud-download"></i>
+			<span class="p-l-1">更新插件</span>
+		</h2>
+
+		<a class="modal-header-close" ng-click="dismiss();">
+			<i class="fa fa-remove"></i>
+		</a>
+	</div>
+
+	<div class="modal-content">
+		<div class="gf-form-group">
+			<p>使用命令行工具键入以下内容进行更新 {{plugin.name}}.</p>
+			<pre><code>grafana-cli plugins update {{plugin.id}}</code></pre>
+			<span class="small">前往<a href="https://grafana.com/plugins/{{plugin.id}}">Grafana.com</a>查看 {{plugin.name}} 的 README 和 changelog。如果您无权访问命令行工具，请联系Grafana管理员。</span>
+		</div>
+		<p class="pluginlist-none-installed"><img class="pluginlist-inline-logo" src="public/img/grafana_icon.svg"><strong>提示</strong>：要一次更新所有插件，请在命令行键入 <code class="code--small">grafana-cli plugins update-all</code></div>
+	</div>
+</div>
